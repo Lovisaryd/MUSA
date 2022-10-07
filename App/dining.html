@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/dining.css">
+    <meta name="description" content="Inquire the private dining room at the luxury italian restaurant MUSA.">
+<meta	name="keywords"	content="italian restaurant, italian restaurant in gothenburg, restaurant in gothenburg, luxury restaurant, italian cuisine, restaurant, italian, fancy food, fancy restaurant">
+<meta	property="og:type"	content="website"	/>
+<meta	property="og:title"	content="MUSA | Italian luxury restaurant in Gothenburg."	/>
+<meta	property="og:url"	content="https://MUSA.com/index.html/"/>
+<meta	property="og:image"	content="">
+<meta	property="og:description"	content='View the luxury italian restaurant MUSAs website.'/>
+<meta	property="og:site_name"	content="MUSA.com"/>
+    <title>PRIVATE DINING | MUSA</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <input id="toggle" class="toggle" type="checkbox" onclick="darkMode()">
+    <div class="theme"></div>
+        <header>
+          <div class="dropdown-navbar">
+          <div class="container nav-container">
+            <input class="checkbox" type="checkbox" name="" id="" onclick="logoToggle()"/>
+            <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+            </div>  
+          <ul class="menu-items">
+              <li><a href="hours.html">HOURS & LOCATION</a></li>
+              <li><a href="menu.html">MENU</a></li>
+              <li><a href="dining.html">PRIVATE DINING</a></li>
+              <li><a href="email.html" id="emailLink">EMAIL SIGNUP</a></li>
+              <li><div id="fb-like" class="fb-like" data-href="https://MUSA.facebook.com/" data-width="" data-layout="button" data-action="like" data-size="small" data-share="false"></div></li>
+          </ul>
+        </div>
+        </div>
+      </div>
+      
+        <a href="index.html"><h1 class="logo">MUSA</h1></a>
+        <nav>
+            <ul class="navbar">
+                <li><a href="hours.html">HOURS & LOCATION</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="dining.html">PRIVATE DINING</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <br>
+    <div class="box">
+    <h2>Elle's</h2>
+    <img src="img/diningroom.jpg" alt="dining room" id="diningroom">
+    <p>Elle's at MUSA is our exquisite private dining room.</p>
+    <p>At Elle's, meals are long and time tends to stand still.</p>
+    <p>Hosting up to 24 seated guests and 45 for standing cocktails.</p>
+    <button id="bokaa" onclick="book()">INQUIRE</button>
+</div>
+<img src="img/room.png" alt="room drawing" id="drawing">
+<div id="inquireform" class="overlay">
+    <input type="checkbox" id="checkboxform" onclick="hide()">
+    <div class="lines">
+      <span class="line1"></span>
+      <span class="line2"></span>
+    </div>
+    <h3>Your contact information</h3>
+    <form>
+        <input type="text" name="fname" placeholder="First name">
+        <input type="text" name="lname" placeholder="Last name">
+        <br>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="telefon" name="phone" placeholder="Phone number">
+    <h3>Your event details</h3>
+        <label>Nature of this event(eg. Birthday party, wedding etc..)</label>
+        <br>
+        <input type="text" name="event">
+        <br>
+        <label>Event date</label>
+        <br>
+        <input type="date" name="date">
+        <br>
+        <label>Time</label>
+        <br>
+        <input type="time" name="start-time"> - <input type="time" name="end-time" required>
+        <br>
+        <label>Number of people</label>
+        <br>
+        <input type="number" name="number" max="45">
+        <br>
+        <button type="submit" id="submitform">Submit</button>
+    </form>
+</div>
+<button class="call" onClick="window.open('tel=0706654575')";>CALL (+46)706654575</button>
+          <footer>
+              <ul class="footer">
+                  <li class="footer">CONTACT</li>
+                  <li class="footer">JOBS</li>
+                  <li class="footer">GIFT CARDS</li>
+                  <li class="footer">KUNGSGATAN 28 GOTHENBURG 41658</li>
+                  <li><div class="fb-like" data-href="https://MUSA.facebook.com/" data-width="" data-layout="button" data-action="like" data-size="small" data-share="false"></div></li>
+              </ul>
+              <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/sv_SE/sdk.js#xfbml=1&version=v15.0" nonce="AD3vRe6C"></script>
+           <button class="footerbutton" onclick="location.href='email.html';")>EMAIL SIGNUP</button>
+        </footer>
+</body>
+<script src="javascript/script3.js"></script>
+</html>

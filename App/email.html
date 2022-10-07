@@ -1,0 +1,66 @@
+<!DOCTYPE html lang="en">
+<html>
+<head>
+    <link rel="stylesheet" href="css/emailstyles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+<title>SIGN UP | MUSA</title>
+</head>
+<body>
+  <input id="toggle" class="toggle" type="checkbox" onclick="darkMode()">
+<div class="theme"></div>
+    <header>
+        <a href="index.html"><h1 class="logo">MUSA</h1></a>
+        
+        <nav>
+            <ul class="navbar">
+                <li><a href="hours.html">HOURS & LOCATION</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="dining.html">PRIVATE DINING</a></li>
+                <li><a href="reservations.html">RESERVATIONS</a></li>
+            </ul>
+        </nav>
+        <div class="dropdown-navbar">
+          <div class="container nav-container">
+            <input class="checkbox" type="checkbox" name="" id="" onclick="logoToggle()"/>
+            <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+            </div>  
+          <ul class="menu-items" id="menu-itemsid">
+              <li><a href="hours.html">HOURS & LOCATION</a></li>
+              <li><a href="menu.html">MENU</a></li>
+              <li><a href="dining.html">PRIVATE DINING</a></li>
+              <li><a href="reservations.html">RESERVATIONS</a></li>
+              <li><a href="email.html" id="emailLink">EMAIL SIGNUP</a></li>
+          </ul>
+        </div>
+        </div>
+      </div>
+    </header>
+    <br>
+    <br>
+    <div class="subscribe" id="subscribe">
+        <h1>SUBSCRIBE</h2>
+            <p>Be in the know and sign up for our email list.</p>
+        <form name="myForm" class="form" id="form" >
+            <input type="text" id="fname" name="fname" class="formname" placeholder="First Name" maxlength="10">
+          
+            <input type="text" id="lname" name="lname" class="formname" placeholder="Last Name">
+            
+            <input type="email" id="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+            <span class="error"></span>
+            
+            <input type="submit" id="submit" onclick="validateFormDesktop()">
+          </form>
+    </div>
+    <form name="tabletForm" class="form-tablet" id="tablet" >
+        <input type="text" id="fname1" name="fname" class="formname" placeholder="First Name" maxlength="10"><br>
+        <input type="text" id="lname1" name="lname" class="formname" placeholder="Last Name" max="10"><br>
+        <input type="email" id="email1" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required><br>
+        <input type="submit" id="submit1" onclick="validateForm()">
+      </form>
+</body>
+<script type="text/javascript" src="javascript/script3.js"></script>
+</html>
